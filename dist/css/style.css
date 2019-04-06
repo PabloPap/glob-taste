@@ -180,8 +180,75 @@ body {
 }
 
 .themes {
-  background-color: #003300;
   grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+}
+
+.theme {
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3.5rem;
+}
+
+.theme__img {
+  width: 100%;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  z-index: 1;
+}
+
+.theme__like {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  fill: #d0b17a;
+  height: 2.5rem;
+  width: 2.5rem;
+  z-index: 2;
+  justify-self: end;
+  margin: 1rem;
+}
+
+.theme__name {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: end;
+  z-index: 3;
+  width: 80%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1.25rem;
+  background-color: #003300;
+  color: #fff;
+  font-weight: 400;
+  transform: translateY(50%);
+}
+
+.theme__location, .theme__days {
+  margin-top: 2.5rem;
+}
+
+.theme__location, .theme__days, .theme__people, .theme__price {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.theme__location svg, .theme__days svg, .theme__people svg, .theme__price svg {
+  fill: #605c4e;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.theme__btn {
+  grid-column: 1 / -1;
 }
 
 .gallery {
