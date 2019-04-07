@@ -136,7 +136,7 @@ body {
 .header {
   background-color: #363020;
   grid-column: full-start / col-end 6;
-  background-image: linear-gradient(rgba(0, 51, 0, 0.9), rgba(0, 51, 0, 0.9)), url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 51, 0, 0.85), rgba(0, 51, 0, 0.85)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
   padding: 8rem;
@@ -189,6 +189,32 @@ body {
 .chefs {
   background-color: #003300;
   grid-column: col-start 7 / full-end;
+  padding: 3rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  grid-row-gap: 2rem;
+}
+
+.chefs__list {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-column-gap: 2rem;
+  grid-row-gap: 5vh;
+  align-items: center;
+}
+
+.chefs__img {
+  width: 7rem;
+  display: block;
+  border-radius: 50%;
+}
+
+.chefs__cooked {
+  text-transform: uppercase;
+  color: #aaa;
+  margin-top: -3px;
 }
 
 .features {
