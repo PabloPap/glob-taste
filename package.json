@@ -15,7 +15,7 @@
     "minify-css": "cleancss --level=1 --source-map --source-map-inline-sources --output dist/css/style.css dist/css/style.css",
     "devss:js": "mkdirp dist/js -p && browserify src/js/main.js -p esmify -o dist/js/bundle.js -t [babelify --presets [@babel/preset-env]",
     "prodss:js": "uglifyjs dist/js/bundle.js -c -m -o dist/js/bundle.js",
-    "imagemin": "node src/imagemin/imagemin.js",
+    "prod:imagemin": "node src/imagemin/imagemin.js",
     "icons": "svgo -f src/img/icons -o dist/img/icons",
     "serve": "browser-sync start --server \"dist\" --files \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
     "dev:css": "run-s compile-sass",
